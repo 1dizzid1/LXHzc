@@ -13,19 +13,6 @@ py -3.13 -m venv .venv
 .\.venv\Scripts\python.exe 罗小黑桌宠.py
 ```
 也可在创建环境后双击“启动小黑.bat”。
-
-## 打包
-建议将源码放在纯英文路径（如 D:\LXHzc），避免 Qt 5 插件路径解析问题。
-```powershell
-.\.venv\Scripts\python.exe -m pip install -r requirements-lock.txt
-.\.venv\Scripts\python.exe -m PyInstaller --noconfirm --clean deskpet.spec
-```
-输出 dist/罗小黑桌宠_5.0。请分发整个目录，不能只复制 EXE。
-requirements-lock.txt 固定本次 Windows/Python 3.13 的构建依赖。
-
-## 测试与数据
-运行 tests/test_*.py 中的各脚本，可进行离屏回归测试。
-个人设置、导入素材与提醒保存在 %LOCALAPPDATA%\LXHDeskPet\5.0，不应提交到仓库。
 详细操作见“使用说明.txt”，也可在设置中打开“使用说明”。
 
 ## 关于和作者
