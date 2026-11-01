@@ -1,0 +1,12 @@
+.venv/
+build-env/
+build/
+dist/
+__pycache__/
+*.py[cod]
+*.log
+*.bak
+backups/
+settings.json
+settings.invalid.json
+test-user-data/
